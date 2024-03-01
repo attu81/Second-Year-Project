@@ -1,0 +1,11 @@
+const express = require('express')
+
+
+
+const app = express()
+
+
+app.listen(8000,(req,res) => {
+    console.log("listening from port 8000")
+
+})

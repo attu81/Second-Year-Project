@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background {
+    background-image: url(../images/Signin.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-container {
+    background-color: rgb(160, 188, 237);
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+   
+  }
+  
+  .btn-signup {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-signup:hover {
+    background-color: #e2b607;
+  }
+  
+  .signin {
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .signin a {
+    color: yellow;
+    text-decoration: none;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline;
+  }
+  
+  .toggle-password {
+    position: relative;
+    cursor: pointer;
+    color: #777;
+  }
+  
+  .toggle-password:hover {
+    color: #333;
+  }
+  
