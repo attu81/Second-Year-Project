@@ -83,10 +83,16 @@ body {
   cursor: pointer;
 }
 
+
+.mainHomeContent{
+  display: flex;
+  gap: 20px;
+}
+
 .hostleStatus {
   margin-top: 30px;
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
 .singleStatus {
@@ -98,6 +104,7 @@ body {
   align-items: center;
   padding: 20px;
   border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .singleStatus img {
@@ -110,3 +117,54 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+
+.middleLine{
+  width: 2px;
+  height: 80vh;
+  background: rgb(236, 181, 84);
+  margin-top: 30px;
+}
+
+.recentlyJoinedStudents{
+  margin-top: 30px;
+  background: #fff;
+  width: 1040px;
+  height: 450px;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.recentlyJoinedStudents h3{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+
+table{
+  margin-top: 30px;
+}
+th{
+  width: 180px;
+  background: rgb(236, 181, 84);
+  height: 10px;
+  padding: 10px;
+}
+
+td{
+  padding: 10px;
+  height: 10px;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+tr:hover{
+  cursor: pointer;
+  background: rgba(182, 154, 104, 0.4);;;
+}
+
