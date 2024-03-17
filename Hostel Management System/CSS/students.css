@@ -10,6 +10,7 @@ body {
   display: flex;
   background: #efefef;
   gap: 20px;
+  position: relative;
 }
 
 .sideBar {
@@ -203,3 +204,8 @@ a {
     color: rgb(236, 181, 84);;
   }
 }
+
+
+
+
+

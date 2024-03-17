@@ -52,32 +52,53 @@
           <img src="https://www.thehivehostels.com/uploads/images/1658301040_7796f3aa4d7819a2f5d5.jpeg" alt="">
           <h3>Name: </h3>
           <p>Type: </p>
-          <p>Available Rooms: </p>
+          <p>No of Rooms: </p>
         </div>
       </a>
-      
-     
+
+
     </div>
 
+    <div class="overlay" id="overlay"></div>
 
-    <div class="add-room">
-      <h5>Add Room</h5>
-
-      <form action="">
-        <input type="text" placeholder="Room name ">
-
+    <div class="add-room" id="popupForm" style="display: none;">
+      <form id="addRoomForm">
+        <div class="heading">
+          <h5>Add Room</h5> 
+          <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <input type="text" name="roomName" placeholder="Room Name">
+        <input type="text" name="roomType" placeholder="Room Type">
+        <input type="text" name="noOfRooms" placeholder="No of Rooms ">
+        <button type="submit" class="submit-btn">Submit</button>
       </form>
-      <button>Add</button>
-
     </div>
+
+
     <div class="adding">
       <p>
 
         Add Rooms
       </p>
-      <button class="addBtn"><i class="fa-solid fa-plus"></i></button>
+      <button class="addBtn" id="handlePopUp"><i class="fa-solid fa-plus"></i></button>
     </div>
   </div>
+
+
+  <script>
+    document.getElementById("handlePopUp").addEventListener("click", function () {
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("popupForm").style.display = "block";
+    });
+
+    document.getElementById("overlay").addEventListener("click", function () {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("popupForm").style.display = "none";
+    });
+
+
+  </script>
+
 
 </body>
 
