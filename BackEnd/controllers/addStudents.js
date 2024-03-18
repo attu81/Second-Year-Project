@@ -1,9 +1,9 @@
 const db = require("../config/dbConfig");
 
 const addStudents = (req, res) => {
-  const { studentName, dob, address, contact, doa } = req.body;
+  const { studentName, dob, address, contact, doa ,  studentImage} = req.body;
 
-  if (!studentName || !dob || !address || !contact || !doa || studentImage) {
+  if (!studentName || !dob || !address || !contact || !doa ) {
     return res.status(500).json({ message: "Please fill all the details" });
   }
 
