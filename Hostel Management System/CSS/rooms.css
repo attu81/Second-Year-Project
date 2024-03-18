@@ -5,9 +5,8 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Truculenta", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 body {
@@ -47,7 +46,7 @@ body {
 .sideBar ul li a {
   color: #fff;
   text-decoration: none;
- font-weight: 600;
+  font-size: 18px;
   transition: all ease-in-out 0.5s;
 }
 
@@ -196,6 +195,7 @@ body {
 a {
   color: black;
   text-decoration: none;
+  height: fit-content;
 }
 
 .overlay {
@@ -225,7 +225,7 @@ a {
 #addRoomForm {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 #addRoomForm input {
@@ -237,6 +237,7 @@ a {
   border-radius: 8px;
   border-bottom-width: 3px;
   font-size: 14px;
+  margin-top: 10px;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -253,6 +254,7 @@ a {
   left: 0;
   width: 0;
   height: 3px;
+  transition: all ease-in-out 3s;
   background: rgb(236, 181, 84);
   animation: expandShrinkBar 3s infinite alternate;
 }
@@ -262,7 +264,7 @@ a {
     width: 0;
   }
   50% {
-    width: 85px;
+    width: 120px;
   }
   100% {
     width: 0;
@@ -271,7 +273,7 @@ a {
 
 .submit-btn {
   width: fit-content;
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-size: 14px;
   outline: none;
   border: none;
@@ -280,6 +282,8 @@ a {
   background: rgb(236, 181, 84);
   cursor: pointer;
   margin: auto;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 #addRoomForm input:focus,
@@ -303,4 +307,27 @@ input:valid {
 
 .close-btn:hover {
   color: rgb(236, 181, 84);
+}
+
+
+.date{
+  display: flex;
+  
+}
+
+.file{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  border: 2px dotted rgb(236, 181, 84);
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+
+  label{
+    cursor: pointer;
+  }
 }
